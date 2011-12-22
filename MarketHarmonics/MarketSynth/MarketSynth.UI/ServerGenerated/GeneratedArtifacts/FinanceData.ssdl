@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="FinanceDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="FinanceDataStore">
+    <EntitySet Name="Instrument" EntityType="FinanceDataStore.Instrument" store:Type="Tables" Schema="dbo" Table="Instrument" />
+    <EntitySet Name="MarketData" EntityType="FinanceDataStore.MarketData" store:Type="Tables" Schema="dbo" Table="MarketData" />
+    <AssociationSet Name="FK_MarketData_Instrument" Association="FinanceDataStore.FK_MarketData_Instrument">
+      <End Role="Instrument" EntitySet="Instrument" />
+      <End Role="MarketData" EntitySet="MarketData" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Instrument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="InstrumentName" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Symbol" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MarketData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Created" Type="datetime" Nullable="false" />
+    <Property Name="MarketOpen" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="MarketHigh" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="MarketLow" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="MarketClose" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="MarketVolume" Type="bigint" Nullable="false" />
+    <Property Name="InstrumentId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MarketData_Instrument">
+    <End Role="Instrument" Type="FinanceDataStore.Instrument" Multiplicity="1" />
+    <End Role="MarketData" Type="FinanceDataStore.MarketData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instrument">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MarketData">
+        <PropertyRef Name="InstrumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

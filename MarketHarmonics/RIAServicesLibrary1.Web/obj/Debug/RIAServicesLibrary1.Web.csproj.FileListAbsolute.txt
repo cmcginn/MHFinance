@@ -1,0 +1,5 @@
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\bin\Debug\RIAServicesLibrary1.Web.dll
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\bin\Debug\RIAServicesLibrary1.Web.pdb
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\obj\Debug\RIAServicesLibrary1.Web.dll
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\obj\Debug\RIAServicesLibrary1.Web.pdb

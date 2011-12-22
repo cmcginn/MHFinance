@@ -1,0 +1,5 @@
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\bin\MarketSynth.Controls.Web.dll
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\bin\MarketSynth.Controls.Web.pdb
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\obj\Debug\MarketSynth.Controls.Web.dll
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\obj\Debug\MarketSynth.Controls.Web.pdb

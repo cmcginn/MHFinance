@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="MarketSynthDomainServiceDataObjectContext" StorageEntityContainer="MarketSynthDomainServiceDataStore">
+    <EntitySetMapping Name="MarketDatas">
+      <EntityTypeMapping TypeName="IsTypeOf(MarketSynthDomainServiceData.MarketData)">
+        <MappingFragment StoreEntitySet="GetMarketData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MarketDate" ColumnName="MarketDate" />
+          <ScalarProperty Name="Open" ColumnName="Open" />
+          <ScalarProperty Name="Close" ColumnName="Close" />
+          <ScalarProperty Name="High" ColumnName="High" />
+          <ScalarProperty Name="Low" ColumnName="Low" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Indicators">
+      <EntityTypeMapping TypeName="IsTypeOf(MarketSynthDomainServiceData.Indicator)">
+        <MappingFragment StoreEntitySet="GetIndicators">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Studies">
+      <EntityTypeMapping TypeName="IsTypeOf(MarketSynthDomainServiceData.Study)">
+        <MappingFragment StoreEntitySet="GetStudies">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+          <ScalarProperty Name="IndicatorId" ColumnName="IndicatorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudyIndicators">
+      <EntityTypeMapping TypeName="IsTypeOf(MarketSynthDomainServiceData.StudyIndicator)">
+        <MappingFragment StoreEntitySet="GetStudyIndicators">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="PointData" ColumnName="PointData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

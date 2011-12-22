@@ -1,0 +1,1 @@
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls.Web\MarketSynth.Controls.Web.csproj,634591019614160156,Properties\AssemblyInfo.cs,

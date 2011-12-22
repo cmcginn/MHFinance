@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="FinanceData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <Association Name="FK_MarketData_Instrument">
+    <End Role="Instrument" Type="FinanceData.Instrument" Multiplicity="1" />
+    <End Role="MarketData" Type="FinanceData.MarketData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Instrument">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MarketData">
+        <PropertyRef Name="InstrumentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Instrument">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="InstrumentName" Type="String" Nullable="false" MaxLength="250" ConcurrencyMode="Fixed" />
+    <Property Name="Symbol" Type="String" Nullable="false" MaxLength="50" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="MarketDatas" Relationship="FinanceData.FK_MarketData_Instrument" ToRole="MarketData" FromRole="Instrument" />
+  </EntityType>
+  <EntityType Name="MarketData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" ConcurrencyMode="Fixed" />
+    <Property Name="MarketOpen" Type="Decimal" Nullable="false" Precision="16" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="MarketHigh" Type="Decimal" Nullable="false" Precision="16" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="MarketLow" Type="Decimal" Nullable="false" Precision="16" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="MarketClose" Type="Decimal" Nullable="false" Precision="16" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="MarketVolume" Type="Int64" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="InstrumentId" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Instrument" Relationship="FinanceData.FK_MarketData_Instrument" ToRole="Instrument" FromRole="MarketData" />
+  </EntityType>
+  <EntityContainer Name="FinanceDataObjectContext">
+    <EntitySet Name="Instruments" EntityType="FinanceData.Instrument" />
+    <EntitySet Name="MarketDatas" EntityType="FinanceData.MarketData" />
+    <AssociationSet Name="FK_MarketData_Instrument" Association="FinanceData.FK_MarketData_Instrument">
+      <End Role="Instrument" EntitySet="Instruments" />
+      <End Role="MarketData" EntitySet="MarketDatas" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

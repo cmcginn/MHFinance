@@ -1,0 +1,1 @@
+C:\Projects\Prototypes\MarketHarmonics\RIAServicesLibrary1.Web\RIAServicesLibrary1.Web.csproj,634596210818198125,Class1.cs,DomainService1.cs,Properties\AssemblyInfo.cs,

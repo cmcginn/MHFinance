@@ -1,0 +1,2 @@
+C:\Projects\Urbana\MHFinance\MarketHarmonics\MarketHarmonics.Web\MarketHarmonics.Web.csproj,634601283121070469,Properties\AssemblyInfo.cs,
+C:\Projects\Urbana\MHFinance\MarketHarmonics\MarketSynth\MarketSynth.Services\MarketSynth.Services.csproj,634596171678637578,MarketSynthDomainService.cs,Properties\AssemblyInfo.cs,

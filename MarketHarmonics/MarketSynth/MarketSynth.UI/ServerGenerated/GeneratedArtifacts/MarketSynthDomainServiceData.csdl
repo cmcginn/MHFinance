@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="MarketSynthDomainServiceData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="MarketData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="MarketDate" Type="DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Open" Type="Decimal" Nullable="false" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="Close" Type="Decimal" Nullable="false" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="High" Type="Decimal" Nullable="false" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="Low" Type="Decimal" Nullable="false" Precision="18" Scale="0" ConcurrencyMode="Fixed" />
+    <Property Name="Volume" Type="Int64" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Indicator">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" MaxLength="Max" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="Study">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="InstrumentName" Type="String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="IndicatorId" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="StudyIndicator">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Label" Type="String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="PointData" Type="String" MaxLength="Max" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityContainer Name="MarketSynthDomainServiceDataObjectContext">
+    <EntitySet Name="MarketDatas" EntityType="MarketSynthDomainServiceData.MarketData" />
+    <EntitySet Name="Indicators" EntityType="MarketSynthDomainServiceData.Indicator" />
+    <EntitySet Name="Studies" EntityType="MarketSynthDomainServiceData.Study" />
+    <EntitySet Name="StudyIndicators" EntityType="MarketSynthDomainServiceData.StudyIndicator" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="FinanceDataObjectContext" StorageEntityContainer="FinanceDataStore">
+    <EntitySetMapping Name="Instruments">
+      <EntityTypeMapping TypeName="IsTypeOf(FinanceData.Instrument)">
+        <MappingFragment StoreEntitySet="Instrument">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="InstrumentName" ColumnName="InstrumentName" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MarketDatas">
+      <EntityTypeMapping TypeName="IsTypeOf(FinanceData.MarketData)">
+        <MappingFragment StoreEntitySet="MarketData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="MarketOpen" ColumnName="MarketOpen" />
+          <ScalarProperty Name="MarketHigh" ColumnName="MarketHigh" />
+          <ScalarProperty Name="MarketLow" ColumnName="MarketLow" />
+          <ScalarProperty Name="MarketClose" ColumnName="MarketClose" />
+          <ScalarProperty Name="MarketVolume" ColumnName="MarketVolume" />
+          <ScalarProperty Name="InstrumentId" ColumnName="InstrumentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

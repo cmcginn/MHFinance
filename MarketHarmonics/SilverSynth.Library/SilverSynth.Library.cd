@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SilverSynth.Library.AmplitudeModulator" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABACAAAAAACAAQAEAAAAAAAARAAAAEAA=</HashCode>
+      <FileName>AmplitudeModulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.Attenuator" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Attenuator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SilverSynth.Library.AttenuatorBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAkAAAAAABAAAAAQAAAAQ=</HashCode>
+      <FileName>AttenuatorBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SilverSynth.Library.Constants" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.Envelope" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAbACAACRAQAAAAABAAgAIBAAAGgABAAABgAAAA=</HashCode>
+      <FileName>Envelope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.FluentAudio" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQIIAAAAQAAAAgQASAAAAQAAgAAAAAAAAAAACAAAACA=</HashCode>
+      <FileName>FluentAudio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.FrequencyModulator" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAABACAAAQAACAAAAEAAAAAAAAwAAAAEAA=</HashCode>
+      <FileName>FrequencyModulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.Mixer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAABAAAEAQAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Mixer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SilverSynth.Library.Oscillator" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAgCAAAAKACAAAIEEAECAAAAAAAAAAAA=</HashCode>
+      <FileName>Oscillator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SilverSynth.Library.Panner" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIQCAAIAgggAAAAIAAAAkAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Panner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SilverSynth.Library.StereoPcmStreamSource" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAMAAAJAAAAABAAAAAAAgQSEAAAgAAgAAAQAEYAAEA=</HashCode>
+      <FileName>StereoPcmStreamSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.StereoSample" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StereoSample.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SilverSynth.Library.WaveTable" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAAAAAAJAAAAAAUAYAAAAAAAAAAAgAAAAAQAAAAAA=</HashCode>
+      <FileName>WaveTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SilverSynth.Library.ISampleMaker" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISampleMaker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SilverSynth.Library.ISignalChainComponent">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISignalChainComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SilverSynth.Library.WaveForm" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAhAABAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>WaveForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

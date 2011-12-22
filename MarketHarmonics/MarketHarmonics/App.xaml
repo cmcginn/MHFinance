@@ -1,0 +1,7 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="MarketHarmonics.App" xmlns:my="clr-namespace:System;assembly=mscorlib">
+  <Application.Resources>
+    <my:String x:Key="DevExpress.Xpf.License">EC-84-E3-4C-A7-46-27-AA-0A-62-77-B0-B4-89-6A-0A-47-F7-B7-E1</my:String>
+  </Application.Resources>
+</Application>

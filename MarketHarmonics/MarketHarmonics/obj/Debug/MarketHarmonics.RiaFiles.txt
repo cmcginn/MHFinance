@@ -1,0 +1,2 @@
+C:\Projects\Urbana\MHFinance\MarketHarmonics\MarketHarmonics
+Generated_Code\MarketHarmonics.Web.g.cs

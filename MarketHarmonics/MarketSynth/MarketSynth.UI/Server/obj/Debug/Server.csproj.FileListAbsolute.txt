@@ -1,0 +1,8 @@
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\bin\Debug\Application.Server.dll.config
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\bin\Debug\Application.Server.dll
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\bin\Debug\Application.Server.pdb
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\bin\Debug\Application.Common.dll
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\obj\Debug\Application.Server.dll
+C:\Projects\Prototypes\MarketSynth\MarketSynth.UI\Server\obj\Debug\Application.Server.pdb

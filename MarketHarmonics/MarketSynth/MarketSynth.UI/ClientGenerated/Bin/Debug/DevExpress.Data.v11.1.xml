@@ -1,0 +1,1996 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Data.v11.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Data.CustomSummaryProcess">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Calculate">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Finalize">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.CustomSummaryProcess.Start">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo.#ctor">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo.#ctor(System.String,DevExpress.XtraEditors.DXErrorProvider.ErrorType)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="errorText">
+		 [To be supplied] 
+            </param>
+            <param name="errorType">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo.ErrorText">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo.ErrorType">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.DXErrorProvider.ErrorType">
+
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.Critical">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.Default">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.None">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User1">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User2">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User3">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User4">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User5">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User6">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User7">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User8">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.User9">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraEditors.DXErrorProvider.ErrorType.Warning">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Services.IProgressIndicationService">
+
+            <summary>
+                <para>Exposes functionality that enables you to display progress indicator for time-consuming operations.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Services.IProgressIndicationService.Begin(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes and displays a progress indicator.
+</para>
+            </summary>
+            <param name="displayName">
+		A string indicating what action is currently performed
+
+            </param>
+            <param name="minProgress">
+		An integer specifying the minimum indicator value.
+
+            </param>
+            <param name="maxProgress">
+		An integer specifying the maximum indicator value.
+
+            </param>
+            <param name="currentProgress">
+		An integer specifying the current indicator value.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Services.IProgressIndicationService.End">
+            <summary>
+                <para>Finalizes progress indication.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Services.IProgressIndicationService.SetProgress(System.Int32)">
+            <summary>
+                <para>Modifies the indicator value to track progress.
+
+</para>
+            </summary>
+            <param name="currentProgress">
+		An integer that is the value indicating the current progress.
+
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.ColumnSortOrder">
+
+            <summary>
+                <para>Lists values specifying the sort orders.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.Ascending">
+            <summary>
+                <para>Sorts the column in ascending order.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.Descending">
+            <summary>
+                <para>Sorts the columns in descending order.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.ColumnSortOrder.None">
+            <summary>
+                <para>No sorting is applied to a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.Filtering.CriteriaOperator">
+
+            <summary>
+                <para>Provides the abstract (<b>MustInherit</b> in Visual Basic) base class for criteria operators.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Accept(DevExpress.Data.Filtering.ICriteriaVisitor)">
+            <summary>
+                <para>Invokes an appropriate overload of the visitor's Visit method.
+</para>
+            </summary>
+            <param name="visitor">
+		A visitor that implements the <see cref="T:DevExpress.Data.Filtering.ICriteriaVisitor"/> interface.
+
+            </param>
+            <returns>An object returned by the specified visitor's Visit method.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.And(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Returns the expression which groups the specified operands with logical AND.
+</para>
+            </summary>
+            <param name="operands">
+		A list of operands to be grouped.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object representing the expression which groups the specified operands with logical AND.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.And(DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Returns the expression which groups two operands with logical AND.
+</para>
+            </summary>
+            <param name="left">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the first operand.
+
+
+            </param>
+            <param name="right">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the second operand.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object, which is an expression which groups two operands with logical AND.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.And(DevExpress.Data.Filtering.CriteriaOperator[])">
+            <summary>
+                <para>Returns the expression which groups the specified operands with logical AND.
+</para>
+            </summary>
+            <param name="operands">
+		An array of <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> objects that specify operands.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the expression which groups the specified operands with logical AND.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Clone(DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Creates a copy of the specified <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object.
+</para>
+            </summary>
+            <param name="origin">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object to clone.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object, which is an exact copy of the specified object. <b>null</b> (<b>Nothing</b> in Visual Basic) if the specified object is null reference.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Clone(DevExpress.Data.Filtering.OperandProperty)">
+            <summary>
+                <para>Creates a copy of the specified <see cref="T:DevExpress.Data.Filtering.OperandProperty"/> object.
+</para>
+            </summary>
+            <param name="origin">
+		An <see cref="T:DevExpress.Data.Filtering.OperandProperty"/> object to clone.
+
+            </param>
+            <returns>An <see cref="T:DevExpress.Data.Filtering.OperandProperty"/> object, which is an exact copy of the specified object. <b>null</b> (<b>Nothing</b> in Visual Basic) if the specified object is a null reference.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Data.Filtering.CriteriaOperator.CustomFunctionCount">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the current object has the same settings as the specified object.
+</para>
+            </summary>
+            <param name="obj">
+		An object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if the object specified by the parameter has the same settings as the current object; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.GetCustomFunction(System.String)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="functionName">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.GetCustomFunctions">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current CriteriaOperator object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.IsNotNull">
+            <summary>
+                <para>For internal use only.
+
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.IsNull">
+            <summary>
+                <para>For internal use only.
+
+</para>
+            </summary>
+            <returns>@nbsp;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.LegacyToString(DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Returns the string representation of the criterion defined by the specified CriteriaOperator.
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object, that is the criterion to convert to its string representation.
+
+
+            </param>
+            <returns>A string representation of the criterion defined by the specified CriteriaOperator.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.LegacyToString">
+            <summary>
+                <para>Returns the string representation of the criterion defined by the current CriteriaOperator.
+</para>
+            </summary>
+            <returns>A string representation of the criterion defined by the current <b>CriteriaOperator</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Not">
+            <summary>
+                <para>Returns an instance of the <see cref="T:DevExpress.Data.Filtering.UnaryOperator"/> that represents the criterion resulting from the logical inversion of the criterion the current CriteriaOperator represents.
+</para>
+            </summary>
+            <returns>An instance of the <see cref="T:DevExpress.Data.Filtering.UnaryOperator"/> that represents the criterion resulting from the logical inversion of the criterion the current CriteriaOperator represents.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Or(DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Returns the expression which groups two operands with logical OR.
+</para>
+            </summary>
+            <param name="left">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the first operand.
+
+
+            </param>
+            <param name="right">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the second operand.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the expression which groups two operands with logical OR.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Or(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Returns the expression which groups the specified operands with logical OR.
+</para>
+            </summary>
+            <param name="operands">
+		A list of operands to be grouped.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the expression which groups the specified operands with logical OR.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Or(DevExpress.Data.Filtering.CriteriaOperator[])">
+            <summary>
+                <para>Returns the expression which groups the specified operands with logical OR.
+</para>
+            </summary>
+            <param name="operands">
+		An array of <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> objects that specify operands.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is the expression which groups the specified operands with logical OR.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Parse(System.String,DevExpress.Data.Filtering.OperandValue[]@)">
+            <summary>
+                <para>Converts the specified string, specifying an expression, to its <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent.
+</para>
+            </summary>
+            <param name="stringCriteria">
+		A <see cref="T:System.String"/> value, that is the expression to convert.
+
+            </param>
+            <param name="criteriaParametersList">
+		[out] Receives the values that are substituted into the expression in place of question mark characters. These parameters can be omitted.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent to the expression contained in <i>criteria</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.Parse(System.String,System.Object[])">
+            <summary>
+                <para>Converts the specified string, specifying an expression, to its <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent.
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:System.String"/> value, that is the expression to convert.
+
+            </param>
+            <param name="parameters">
+		The values that are substituted into the expression in place of question mark characters. These parameters can be omitted.
+
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent to the expression contained in <i>criteria</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ParseList(System.String,DevExpress.Data.Filtering.OperandValue[]@)">
+            <summary>
+                <para>Converts the specified string representation of expressions that are divided by a semicolon into their <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalents.
+
+</para>
+            </summary>
+            <param name="criteriaList">
+		A <see cref="T:System.String"/> value that is the expressions to convert. The expressions are divided by a semicolon.
+
+
+            </param>
+            <param name="criteriaParametersList">
+		[out] Receives the values that are substituted into the expression in place of question mark characters. These parameters can be omitted.
+
+
+            </param>
+            <returns>An array of <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalents to the expressions contained in <i>criteriaList</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ParseList(System.String,System.Object[])">
+            <summary>
+                <para>Converts the specified string representation of expressions that are divided by a semicolon into their <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalents.
+
+</para>
+            </summary>
+            <param name="criteriaList">
+		A <see cref="T:System.String"/> value that is the expressions to convert. The expressions are divided by a semicolon.
+
+
+            </param>
+            <param name="parameters">
+		The values that are substituted into the expression in place of question mark characters. These parameters can be omitted.
+
+
+            </param>
+            <returns>An array of <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalents to the expressions contained in <i>criteriaList</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ParseList(System.String,DevExpress.Data.Filtering.OperandValue[]@,System.Boolean)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="criteriaList">
+		 [To be supplied] 
+            </param>
+            <param name="criteriaParametersList">
+		 [To be supplied] 
+            </param>
+            <param name="allowSortings">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="customFunction">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.RegisterCustomFunctions(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="customFunctions">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToBasicStyleString(DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.OperandValue[]@)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in VB style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that is the expression to convert.
+
+
+            </param>
+            <param name="criteriaParametersList">
+		[out] Receives the values that are marked by a question mark character in the resulting string.
+
+
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToBasicStyleString(DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in VB style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that is the expression to convert.
+
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToCStyleString(DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.OperandValue[]@)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in C# style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that is the expression to convert.
+
+
+            </param>
+            <param name="criteriaParametersList">
+		[out] Receives the values that are marked by a question mark character in the result string.
+
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToCStyleString(DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in C# style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that represents the expression to convert.
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToString(DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.OperandValue[]@)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in VB style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that represents the expression to convert.
+
+            </param>
+            <param name="criteriaParametersList">
+		[out] Receives the values that are marked by question mark character in the result string.
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToString">
+            <summary>
+                <para>Converts the current expression into its VB equivalent string.
+
+</para>
+            </summary>
+            <returns>A string representation of this expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.ToString(DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Converts the specified expression into its equivalent string in VB style.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that is the expression to convert.
+
+
+            </param>
+            <returns>A string representation of the specified expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.TryParse(System.String,System.Object[])">
+            <summary>
+                <para>Tries to convert the specified string representation of an expression to its <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent.
+
+</para>
+            </summary>
+            <param name="criteria">
+		A <see cref="T:System.String"/> value that is the expression to convert.
+
+
+            </param>
+            <param name="parameters">
+		The values that are substituted into the expression in place of question mark characters. These parameters can be omitted.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> equivalent to the expression contained in <i>criteria</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.UnregisterCustomFunction(System.String)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="functionName">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.Filtering.CriteriaOperator.UnregisterCustomFunction(DevExpress.Data.Filtering.ICustomFunctionOperator)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="customFunction">
+		 [To be supplied] 
+            </param>
+            <returns> [To be supplied] </returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraEditors.DXErrorProvider.IDXDataErrorInfo">
+
+            <summary>
+                <para>Provides methods to return error information for a business object's properties.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.DXErrorProvider.IDXDataErrorInfo.GetError(DevExpress.XtraEditors.DXErrorProvider.ErrorInfo)">
+            <summary>
+                <para>When implemented by a class, this method returns information on an error associated with a business object.
+</para>
+            </summary>
+            <param name="info">
+		An object that contains information on an error.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraEditors.DXErrorProvider.IDXDataErrorInfo.GetPropertyError(System.String,DevExpress.XtraEditors.DXErrorProvider.ErrorInfo)">
+            <summary>
+                <para>When implemented by a class, this method returns information on an error associated with a specific business object's property.
+</para>
+            </summary>
+            <param name="propertyName">
+		A string that identifies the name of the property for which information on an error is to be returned.
+
+            </param>
+            <param name="info">
+		An <see cref="T:DevExpress.XtraEditors.DXErrorProvider.ErrorInfo"/> object that contains information on an error.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGrid.ColumnGroupInterval">
+
+            <summary>
+                <para>Lists the values that specify how the data rows are combined into groups when in grouping mode.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Alphabetical">
+            <summary>
+                <para>Combines column values into categories according to the character that the values start with.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Date">
+            <summary>
+                <para>This option is in effect only for columns that store date/time values. 
+
+<para>
+Column values are grouped by the date part. The time part of the values is ignored.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DateMonth">
+            <summary>
+                <para>This option is in effect only for columns that store date/time values.
+<para>
+Column values are grouped by the month part. Examples of groups: <b>January</b>, <b>February</b>, <b>March</b> (the actual names of the months are determined by the current culture).
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DateRange">
+            <summary>
+                <para>This option is in effect only for columns that store date/time values. 
+<para>
+Rows are grouped into the following groups according to their date value as compared with the current system date: "Today", "Tomorrow", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Next Week", "Two Weeks Away", "Three Weeks Away", "Next Month", "Beyond Next Month", "Yesterday", "Last Week", "Two Weeks Ago", "Three Weeks Ago", "Last Month", "Older".
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DateYear">
+            <summary>
+                <para>This option is in effect only for columns that store date/time values.
+<para>
+Column values are grouped by the year part. Examples of such groups: 2003, 2004, 2005.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Default">
+            <summary>
+                <para>In regular binding mode, for columns which store date/time values, this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Date"/> option. For non date/time columns this option is the same as the <see cref="F:DevExpress.XtraGrid.ColumnGroupInterval.Value"/> option.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.DisplayText">
+            <summary>
+                <para>Rows are grouped by cells' display values.
+
+<para>
+In specific instances, cells can have different edit values, but the same display value. To combine these rows into the same group, use the <b>DisplayText</b> group mode.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnGroupInterval.Value">
+            <summary>
+                <para>Rows are grouped by their values (the entire values of each row in a group have to match). The number of groups matches the number of unique values within the grouping column. 
+
+<para>
+Note that <see cref="T:System.DateTime"/> objects which have the same date portion but different time portions are treated as unique values (each has it's own group).
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGrid.ColumnSortMode">
+
+            <summary>
+                <para>Lists the values that specify how a column's data should be sorted.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnSortMode.Custom">
+            <summary>
+                <para>Enables custom sorting via the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomColumnSort"/> event.
+
+<para>
+Enables custom grouping of the rows when grouping is applied against the current column via the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomColumnGroup"/> event.
+</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnSortMode.Default">
+            <summary>
+                <para>Sorts data according to the type of the editor assigned to a column. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnSortMode.DisplayText">
+            <summary>
+                <para>Sorts data by the text displayed within a column's cells. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraGrid.ColumnSortMode.Value">
+            <summary>
+                <para>Sorts data by edit values of a column (these are synchronized with the values in a bound data source). 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.SummaryItemType">
+
+            <summary>
+                <para>Lists values that specify the aggregate function types.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Average">
+            <summary>
+                <para>The average value of a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Count">
+            <summary>
+                <para>Calculates the number of records.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Custom">
+            <summary>
+                <para>Specifies whether calculations should be performed manually using a specially designed event.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Max">
+            <summary>
+                <para>The maximum value in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Min">
+            <summary>
+                <para>The minimum value in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.None">
+            <summary>
+                <para>Disables summary value calculation.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.SummaryItemType.Sum">
+            <summary>
+                <para>The sum of all values in a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.AfterCheckWordEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.AfterCheckWord"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpellChecker.AfterCheckWordEventHandler.Invoke(System.Object,DevExpress.XtraSpellChecker.AfterCheckWordEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.AfterCheckWord"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object that triggers the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.AfterCheckWord"/> event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs"/> object that provides data for the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.AfterCheckWord"/> event.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.AfterCheckWord"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.#ctor(System.Object,System.String,System.String,DevExpress.XtraSpellChecker.SpellCheckOperation,DevExpress.XtraSpellChecker.Parser.Position)">
+            <summary>
+                <para>Initializes a new AfterCheckWordEventArgs class instance with specified settings.
+</para>
+            </summary>
+            <param name="editControl">
+		An object representing the control being checked.
+
+
+            </param>
+            <param name="originalWord">
+		A string representing a word before the check. 
+
+
+            </param>
+            <param name="changedWord">
+		A string representing the word modified after spell check.
+
+
+            </param>
+            <param name="result">
+		A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckOperation"/> enumeration value, representing the operation type. 
+
+            </param>
+            <param name="startPosition">
+		A <see cref="T:DevExpress.XtraSpellChecker.Parser.Position"/> object, representing the position in the text where the checked word begins.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.ChangedWord">
+            <summary>
+                <para>Gets the word that replaced the former one after the spelling check is performed.
+
+</para>
+            </summary>
+            <value>A string, representing the word modified after spelling check.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.EditControl">
+            <summary>
+                <para>Gets the control being checked.
+</para>
+            </summary>
+            <value>An object representing a control being checked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.Operation">
+            <summary>
+                <para>Gets the type of operation performed with the word in a spell check.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.SpellCheckOperation"/> enumeration value, representing the operation type.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.OriginalWord">
+            <summary>
+                <para>Gets the word before spell check is performed.
+
+
+</para>
+            </summary>
+            <value>A string representing a word before the check.
+
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.AfterCheckWordEventArgs.StartPosition">
+            <summary>
+                <para>Gets the position of a checked word in a text.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpellChecker.Parser.Position"/> object, representing the position in a text where the checked word begins. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.WordAddedEventHandler">
+
+            <summary>
+                <para>Methods that will handle the <b>WordAdded</b> event.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpellChecker.WordAddedEventHandler.Invoke(System.Object,DevExpress.XtraSpellChecker.WordAddedEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.WordAdded"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		An object of any type that triggers the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.WordAdded"/> event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpellChecker.WordAddedEventArgs"/> object that provides data for the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.WordAdded"/> event.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.WordAddedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpellChecker.SpellCheckerBase.WordAdded"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpellChecker.WordAddedEventArgs.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the WordAddedEventArgs class with specified settings. 
+
+
+</para>
+            </summary>
+            <param name="word">
+		A word that has been added to the custom dictionary.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpellChecker.WordAddedEventArgs.Word">
+            <summary>
+                <para>Gets a word added to the dictionary.
+</para>
+            </summary>
+            <value>A string representing a word added to the dictionary.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.UnboundColumnType">
+
+            <summary>
+                <para>Contains values that specify the data type and binding mode of columns.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Boolean">
+            <summary>
+                <para>Indicates that the column is unbound and it contains Boolean values (the <see cref="T:System.Boolean"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Bound">
+            <summary>
+                <para>Indicates that the column is bound to a field in the control's underlying data source. The type of data this column contains is determined by the bound field.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.DateTime">
+            <summary>
+                <para>Indicates that the column is unbound and it contains date/time values (the <see cref="T:System.DateTime"/> type). 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Decimal">
+            <summary>
+                <para>Indicates that the column is unbound and it contains decimal values (the <see cref="T:System.Decimal"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Integer">
+            <summary>
+                <para>Indicates that the column is unbound and it contains integer values (the <see cref="T:System.Int32"/> type).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.Object">
+            <summary>
+                <para>Indicates that the column is unbound and it contains values of any type. A <see cref="T:DevExpress.Xpf.Editors.TextEdit"/> editor is assigned for the in-place editing of such a column.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Data.UnboundColumnType.String">
+            <summary>
+                <para>Indicates that the column is unbound, and it contains string values (the <see cref="T:System.String"/> type). 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Utils.Commands.Command">
+
+            <summary>
+                <para>Serves as a base for classes that present commands.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Utils.Commands.Command.CanExecute">
+            <summary>
+                <para>Determines whether the command can execute in its current state.
+</para>
+            </summary>
+            <returns><b>true</b> if the command can execute; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.CommandSourceType">
+            <summary>
+                <para>Gets or sets the type of the object which invokes the command.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Commands.CommandSourceType"/> enumeration value, specifying the object type.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.Commands.Command.CreateDefaultCommandUIState">
+            <summary>
+                <para>Creates an object defining the command state for the current command. 
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface that defines the command state.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.Description">
+            <summary>
+                <para>Gets the text description of a command.
+</para>
+            </summary>
+            <value>A string containing the command's description.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.Commands.Command.Execute">
+            <summary>
+                <para>Executes the command on the current command target.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.Commands.Command.ForceExecute(DevExpress.Utils.Commands.ICommandUIState)">
+            <summary>
+                <para>Performs a command action, regardless of a command state.
+</para>
+            </summary>
+            <param name="state">
+		An <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface defining the command state.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.HideDisabled">
+            <summary>
+                <para>Gets or sets whether the object to which the command is attached is hidden, if the command is disabled.
+</para>
+            </summary>
+            <value><b>true</b> to hide the object with a disabled command; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.Image">
+            <summary>
+                <para>Gets an image associated with the command.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Image"/> object representing the associated image.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.LargeImage">
+            <summary>
+                <para>Gets a larger image associated with the command.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Image"/> object representing the associated image.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.MenuCaption">
+            <summary>
+                <para>Gets the menu caption associated with the current command.
+</para>
+            </summary>
+            <value>A string representing the text of the menu item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Utils.Commands.Command.ShowsModalDialog">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="M:DevExpress.Utils.Commands.Command.UpdateUIState(DevExpress.Utils.Commands.ICommandUIState)">
+            <summary>
+                <para>Updates the command state.
+</para>
+            </summary>
+            <param name="state">
+		An <see cref="T:DevExpress.Utils.Commands.ICommandUIState"/> interface defining the state of a command.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.SpellCheckOperation">
+
+            <summary>
+                <para>Lists implemented spell checker operations.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.AddToDictionary">
+            <summary>
+                <para>Replaces a word in the text with the user input, and adds the replacement to the custom dictionary.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Cancel">
+            <summary>
+                <para>Stops the spell check operation, resets the checking strategy and closes the spelling form. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Change">
+            <summary>
+                <para>Replaces the current word in the text being checked with the suggested word.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.ChangeAll">
+            <summary>
+                <para>Replaces all occurences of the current word in the text being checked with the suggested word.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Custom">
+            <summary>
+                <para>This enumeration member is intended for internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Delete">
+            <summary>
+                <para>Deletes the current word from the text.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Ignore">
+            <summary>
+                <para>Disregards the current word and proceeds to the next one.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.IgnoreAll">
+            <summary>
+                <para>Disregards the current word and all its occurences in the text.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.None">
+            <summary>
+                <para>This enumeration member is intended for internal use only. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Options">
+            <summary>
+                <para>Invokes the spelling options form. After closing the form, re-checks the text with the new spelling options, starting with the last checked word.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Recheck">
+            <summary>
+                <para>Forces the spell checker to check the last checked word again.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.SilentChange">
+            <summary>
+                <para>Replaces the current word in the text being checked with the suggested word. For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.SilentIgnore">
+            <summary>
+                <para>Disregards the current word and proceeds to the next one. For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckOperation.Undo">
+            <summary>
+                <para>Cancels the effect of the last operation, restoring the text to its previous state.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpellChecker.SpellCheckMode">
+
+            <summary>
+                <para>Lists available operation modes of the spell checker.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckMode.AsYouType">
+            <summary>
+                <para>Starts spell check when you finish typing the word or moves the cursor after changing it.This operation mode underlines the misspelled word and allows you to select a suggestion from the context menu, invoked by right-clicking the word.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpellChecker.SpellCheckMode.OnDemand">
+            <summary>
+                <para>Starts spell check and invokes the spelling form for making corrections.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.SelectionChangedEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.AgDataGrid.AgDataGrid.SelectionChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventHandler.Invoke(System.Object,DevExpress.Data.SelectionChangedEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.AgDataGrid.AgDataGrid.SelectionChanged"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.SelectionChangedEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.SelectionChangedEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Grid.GridViewBase.SelectionChanged"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventArgs.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SelectionChangedEventArgs class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.SelectionChangedEventArgs.#ctor(DevExpress.Data.CollectionChangeAction,System.Int32)">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <param name="action">
+		 [To be supplied] 
+            </param>
+            <param name="controllerRow">
+		 [To be supplied] 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.SelectionChangedEventArgs.Action">
+            <summary>
+                <para> [To be supplied] </para>
+            </summary>
+            <value> [To be supplied] </value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.SelectionChangedEventArgs.ControllerRow">
+            <summary>
+                <para>Identifies the row whose selected state has been changed.
+</para>
+            </summary>
+            <value>An integer value that specifies the handle of the row whose selected state has been changed.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Utils.DefaultBoolean">
+
+            <summary>
+                <para>Lists values which specify the validity of a condition (indicates whether the condition is true or false).
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Utils.DefaultBoolean.Default">
+            <summary>
+                <para>The value is determined by a control's current setting. The default value is automatically set for a control if an end-user doesn't specify a value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.DefaultBoolean.False">
+            <summary>
+                <para>Corresponds to a Boolean value of <b>false</b>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Utils.DefaultBoolean.True">
+            <summary>
+                <para>Corresponds to a Boolean value of <b>true</b>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryExistEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomSummaryExists"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryExistEventHandler.Invoke(System.Object,DevExpress.Data.CustomSummaryExistEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.AgDataGrid.AgDataGrid.CustomSummaryExists"/> event.
+
+</para>
+            </summary>
+            <param name="sender">
+		The event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.CustomSummaryExistEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryExistEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomSummaryExists"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryExistEventArgs.#ctor(System.Int32,System.Int32,System.Object)">
+            <summary>
+                <para>Initializes a new instance of the CustomSummaryExistEventArgs class with specified settings.
+</para>
+            </summary>
+            <param name="groupRowHandle">
+		An integer value specifying the handle of the group row whose summary value is about to be calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupRowHandle"/> property.
+
+            </param>
+            <param name="groupLevel">
+		An integer value specifying the zero-based nesting level of the processed group. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupLevel"/> property.
+
+            </param>
+            <param name="item">
+		An object which represents the summary item whose value is about to be calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryExistEventArgs.Item"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.Exists">
+            <summary>
+                <para>Gets or sets whether the summary value should be calculated and displayed.
+</para>
+            </summary>
+            <value><b>true</b> to calculate and display the summary value; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupLevel">
+            <summary>
+                <para>Gets the nesting level of a group row whose summary value is being calculated.
+</para>
+            </summary>
+            <value>An integer value that specifies the zero-based nesting level of the processed group row.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.GroupRowHandle">
+            <summary>
+                <para>Gets the handle of a group row whose summary value is calculated. 
+</para>
+            </summary>
+            <value>An integer value specifying the handle of the group row whose summary value is calculated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.IsGroupSummary">
+            <summary>
+                <para>Gets whether a group summary value is calculated.
+</para>
+            </summary>
+            <value><b>true</b> if a group summary value is calculated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.IsTotalSummary">
+            <summary>
+                <para>Gets whether a total summary value is calculated.
+</para>
+            </summary>
+            <value><b>true</b> if a total summary value is calculated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryExistEventArgs.Item">
+            <summary>
+                <para>Gets a summary item whose value is calculated.
+</para>
+            </summary>
+            <value>An object representing a summary item whose value is calculated.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomSummary"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventHandler.Invoke(System.Object,DevExpress.Data.CustomSummaryEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.AgDataGrid.AgDataGrid.CustomSummary"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event sender.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.Data.CustomSummaryEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Data.CustomSummaryEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.Xpf.Grid.GridControl.CustomSummary"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CustomSummaryEventArgs class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.#ctor(System.Int32,System.Object,System.Object,System.Int32,DevExpress.Data.CustomSummaryProcess,System.Object,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the CustomSummaryEventArgs class.
+</para>
+            </summary>
+            <param name="controllerRow">
+		An integer value, identifying the processed row by its handle. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.RowHandle"/> property.
+
+            </param>
+            <param name="totalValue">
+		An object, representing the custom calculated summary value. This value is assigned to the  <see cref="P:DevExpress.Data.CustomSummaryEventArgs.TotalValue"/> property.
+
+            </param>
+            <param name="fieldValue">
+		An object, representing the processed field value. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.FieldValue"/> property.
+
+            </param>
+            <param name="groupRowHandle">
+		An integer value, identifying the group row whose child data rows are involved in summary calculation. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.GroupRowHandle"/> property.
+
+            </param>
+            <param name="summaryProcess">
+		A <see cref="T:DevExpress.Data.CustomSummaryProcess"/> enumeration value, identifying the current calculation stage. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.SummaryProcess"/> property.
+
+            </param>
+            <param name="item">
+		An object, representing the summary item whose value is being calculated. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.Item"/> property.
+
+            </param>
+            <param name="groupLevel">
+		An integer value indicating the nested group level of the processed row. This value is assigned to the <see cref="P:DevExpress.Data.CustomSummaryEventArgs.GroupLevel"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.FieldValue">
+            <summary>
+                <para>Gets the processed field value.
+</para>
+            </summary>
+            <value>An object, representing the processed field value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.GetGroupSummary(System.Int32,System.Object)">
+            <summary>
+                <para>Returns the specified group summary value displayed within the specified group row.
+</para>
+            </summary>
+            <param name="groupRowHandle">
+		An integer value that identifies the group row by its handle.
+
+            </param>
+            <param name="summaryItem">
+		A <see cref="T:DevExpress.Xpf.Grid.GridSummaryItem"/> object that is the group summary item.
+
+
+            </param>
+            <returns>An object that is the specified group summary value displayed within the specified group row.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Data.CustomSummaryEventArgs.GetValue(System.String)">
+            <summary>
+                <para>Returns the specified field's value.
+</para>
+            </summary>
+            <param name="fieldName">
+		A <see cref="T:System.String"/> value that identifies the field whose value must be returned.
+
+            </param>
+            <returns>An object that represents the specified field value.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.GroupLevel">
+            <summary>
+                <para>Gets the nested level of the group whose summary value is being calculated.
+</para>
+            </summary>
+            <value>An integer value representing the zero-based nested level of the processed group.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.GroupRowHandle">
+            <summary>
+                <para>Gets the handle of a group row whose child data rows are involved in summary calculation.
+</para>
+            </summary>
+            <value>An integer value that specifies the group row's handle. <b>0</b> when calculating a total summary value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.IsGroupSummary">
+            <summary>
+                <para>Gets whether a group summary value is being calculated.
+</para>
+            </summary>
+            <value><b>true</b> if a group summary value is being calculated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.IsTotalSummary">
+            <summary>
+                <para>Gets whether a total summary value is being calculated.
+</para>
+            </summary>
+            <value><b>true</b> if a total summary value is being calculated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.Item">
+            <summary>
+                <para>Gets a summary item whose value is being calculated.
+</para>
+            </summary>
+            <value>An object that represents a summary item whose value is being calculated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.RowHandle">
+            <summary>
+                <para>Gets the processed row's handle.
+</para>
+            </summary>
+            <value>An integer value that identifies the processed data row by its handle.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.SummaryProcess">
+            <summary>
+                <para>Gets a value indicating the current calculation stage.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.CustomSummaryProcess"/> enumeration value, identifying the current calculation stage.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.TotalValue">
+            <summary>
+                <para>Gets or sets the total or group summary value.
+</para>
+            </summary>
+            <value>An object representing the total or group summary value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Data.CustomSummaryEventArgs.TotalValueReady">
+            <summary>
+                <para>Gets or sets whether the Calculation stage of the custom summary calculation process should be skipped.
+</para>
+            </summary>
+            <value><b>true</b> to skip the Calculation stage of the custom summary calculation process; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+    </members>
+</doc>

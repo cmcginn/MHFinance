@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="MarketSynthDomainServiceDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MarketSynthDomainServiceDataStore">
+    <EntitySet Name="GetMarketData" EntityType="MarketSynthDomainServiceDataStore.MarketData" store:Type="Tables" Schema="dbo" Table="MarketSynth.Services.MarketData" />
+    <EntitySet Name="GetIndicators" EntityType="MarketSynthDomainServiceDataStore.Indicator" store:Type="Tables" Schema="dbo" Table="MarketSynth.Services.Indicator" />
+    <EntitySet Name="GetStudies" EntityType="MarketSynthDomainServiceDataStore.Study" store:Type="Tables" Schema="dbo" Table="MarketSynth.Services.Study" />
+    <EntitySet Name="GetStudyIndicators" EntityType="MarketSynthDomainServiceDataStore.StudyIndicator" store:Type="Tables" Schema="dbo" Table="MarketSynth.Services.StudyIndicator" />
+  </EntityContainer>
+  <EntityType Name="MarketData">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MarketDate" Type="datetime" Nullable="false" />
+    <Property Name="Open" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Close" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="High" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Low" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Volume" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Indicator">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Study">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="InstrumentName" Type="nvarchar(max)" />
+    <Property Name="IndicatorId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StudyIndicator">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Label" Type="nvarchar(max)" />
+    <Property Name="PointData" Type="nvarchar(max)" />
+  </EntityType>
+</Schema>

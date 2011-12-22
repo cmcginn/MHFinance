@@ -1,0 +1,7 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             x:Class="MarketSynth.Controls.App" xmlns:my="clr-namespace:System;assembly=mscorlib">
+    <Application.Resources>
+    <my:String x:Key="DevExpress.Xpf.License">CF-90-77-19-89-B9-A5-AA-1C-EE-F3-85-81-86-D1-C5-CC-5F-F8-71</my:String>
+  </Application.Resources>
+</Application>

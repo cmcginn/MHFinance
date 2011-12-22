@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="MarketHarmonics.Scratch"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="600" d:DesignWidth="800" xmlns:riaControls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.DomainServices" xmlns:my="clr-namespace:MarketSynth.Services" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="35"></RowDefinition>
+      <RowDefinition Height="100"></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+      <riaControls:DomainDataSource AutoLoad="False" d:DesignData="{d:DesignInstance my:PointData, CreateList=true}" Height="0" LoadedData="pointDataDomainDataSource_LoadedData" Name="pointDataDomainDataSource" QueryName="GetPointDataQuery" Width="0">
+      <riaControls:DomainDataSource.DomainContext>
+        <my:MarketSynthDomainContext />
+      </riaControls:DomainDataSource.DomainContext>
+      <riaControls:DomainDataSource.QueryParameters>
+        <riaControls:Parameter ParameterName="instrument" Value="{Binding ElementName=instrumentTextBox, Path=Text}" />
+        <riaControls:Parameter ParameterName="indicator" Value="{Binding ElementName=indicatorTextBox, Path=Text}" />
+      </riaControls:DomainDataSource.QueryParameters>
+    </riaControls:DomainDataSource>
+    <StackPanel Height="30" Grid.Row="0" HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Top">
+      <sdk:Label Content="Instrument:" Margin="3" VerticalAlignment="Center" />
+      <TextBox Name="instrumentTextBox" Width="60" />
+      <sdk:Label Content="Indicator:" Margin="3" VerticalAlignment="Center" />
+      <TextBox Name="indicatorTextBox" Width="60" />
+      <Button Command="{Binding Path=LoadCommand, ElementName=pointDataDomainDataSource}" Content="Load" Margin="3" Name="pointDataDomainDataSourceLoadButton" Click="pointDataDomainDataSourceLoadButton_Click" />
+    </StackPanel>
+    <sdk:DataGrid AutoGenerateColumns="False" Grid.Row="1" Height="200" ItemsSource="{Binding ElementName=pointDataDomainDataSource, Path=Data}" Name="pointDataDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected">
+      <sdk:DataGrid.Columns>
+        <sdk:DataGridTextColumn x:Name="idColumn" Binding="{Binding Path=Id, Mode=OneWay}" Header="Id" IsReadOnly="True" Width="SizeToHeader" />
+        <sdk:DataGridTextColumn x:Name="pointColumn" Binding="{Binding Path=Point}" Header="Point" Width="SizeToHeader" />
+      </sdk:DataGrid.Columns>
+    </sdk:DataGrid>
+    <StackPanel Orientation="Vertical" Grid.Row="2">
+
+      <dxc:ChartControl Name="chartControl1">
+        <dxc:ChartControl.Diagram>
+          <dxc:XYDiagram2D EnableAxisXNavigation="True" EnableAxisYNavigation="True">
+            <dxc:XYDiagram2D.AxisX>
+              <dxc:AxisX2D>
+                <dxc:AxisX2D.Range>
+                  <dxc:AxisRange MaxValueInternal="365" MinValueInternal="292" />
+                </dxc:AxisX2D.Range>
+              </dxc:AxisX2D>
+            </dxc:XYDiagram2D.AxisX>
+            <dxc:XYDiagram2D.Series>
+              <dxc:LineSeries2D DataSource="{Binding ElementName=pointDataDomainDataSource, Path=Data}"  ArgumentDataMember="Date" ValueDataMember="Point" ArgumentScaleType="DateTime" />
+            </dxc:XYDiagram2D.Series>
+          </dxc:XYDiagram2D>
+        </dxc:ChartControl.Diagram>
+        <!--<dxc:ChartControl.Diagram  >
+          <dxc:XYDiagram2D EnableAxisXNavigation="True" EnableAxisYNavigation="True">
+            <dxc:XYDiagram2D.AxisY>
+              <dxc:AxisY2D />
+            </dxc:XYDiagram2D.AxisY>
+            <dxc:XYDiagram2D.AxisX>
+              <dxc:AxisX2D>
+                <dxc:AxisX2D.NumericOptions>
+                  <dxc:NumericOptions />
+                </dxc:AxisX2D.NumericOptions>
+                <dxc:AxisX2D.Range>
+                  <dxc:AxisRange MaxValueInternal="365" MinValueInternal="292"/>
+                </dxc:AxisX2D.Range>
+                <dxc:AxisX2D.ScrollingRange>
+                  <dxc:AxisRange MinValue="1" />
+                </dxc:AxisX2D.ScrollingRange>
+              </dxc:AxisX2D>
+            </dxc:XYDiagram2D.AxisX>
+            <dxc:XYDiagram2D.AxisYScrollBarOptions>
+              <dxc:ScrollBarOptions />
+            </dxc:XYDiagram2D.AxisYScrollBarOptions>
+            <dxc:XYDiagram2D.AxisXScrollBarOptions>
+              <dxc:ScrollBarOptions />
+            </dxc:XYDiagram2D.AxisXScrollBarOptions>
+            <dxc:XYDiagram2D.Series>
+              <dxc:PointSeries2D DataSource="{Binding ElementName=pointDataDomainDataSource, Path=Data}"  ArgumentDataMember="Date" ValueDataMember="Point" ArgumentScaleType="DateTime">
+                <dxc:PointSeries2D.LegendPointOptions>
+                  <dxc:PointOptions>
+                    <dxc:PointOptions.ValueNumericOptions>
+                      <dxc:NumericOptions />
+                    </dxc:PointOptions.ValueNumericOptions>
+                  </dxc:PointOptions>
+                </dxc:PointSeries2D.LegendPointOptions>
+                <dxc:PointSeries2D.PointOptions>
+                  <dxc:PointOptions>
+                    <dxc:PointOptions.ArgumentDateTimeOptions>
+                      <dxc:DateTimeOptions />
+                    </dxc:PointOptions.ArgumentDateTimeOptions>
+                  </dxc:PointOptions>
+                </dxc:PointSeries2D.PointOptions>
+                <dxc:PointSeries2D.Label>
+                  <dxc:SeriesLabel />
+                </dxc:PointSeries2D.Label>
+              </dxc:PointSeries2D>
+            </dxc:XYDiagram2D.Series>
+          </dxc:XYDiagram2D>
+        </dxc:ChartControl.Diagram>-->
+      </dxc:ChartControl>
+    </StackPanel>
+    
+  </Grid>
+</UserControl>

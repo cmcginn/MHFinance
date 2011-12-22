@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="MarketHarmonics.MarketStudies"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:MarketHarmonics"
+    mc:Ignorable="d"    
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition Height="27"></RowDefinition>
+    </Grid.RowDefinitions>
+    <StackPanel Orientation="Horizontal" Grid.Row="0">
+      <ListBox Name="listBox1" MaxHeight="1000" ItemsSource="{Binding Studies}">
+      <ListBox Name="MarketStudyList">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+            <local:MarketStudy/>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+    </ListBox>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" Grid.Row="1">
+      <Button Content="Add Study" Width="75" Command="{Binding AddStudyCommand}"></Button>
+    </StackPanel>
+  </Grid>
+</UserControl>

@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="MarketSynth.Controls.ChartDisplayControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts">
+  <UserControl.Resources>
+    <ResourceDictionary>
+      <PointCollection x:Key="ObjectCollection">
+        <Point X="1" Y="8" />
+        <Point X="2" Y="3" />
+        <Point X="3" Y="10" />
+        <Point X="4" Y="4" />
+        <Point X="5" Y="6" />
+        <Point X="6" Y="7" />
+        <Point X="7" Y="3" />
+        <Point X="8" Y="-2" />
+        <Point X="9" Y="-4" />
+        <Point X="10" Y="-8" />
+        <Point X="11" Y="-6" />
+        <Point X="12" Y="-2" />
+        <Point X="13" Y="-5" />
+      </PointCollection>
+    </ResourceDictionary>
+  </UserControl.Resources>
+  <Grid x:Name="LayoutRoot" Background="White">
+    <dxc:ChartControl  Name="chartControl1">
+      <dxc:ChartControl.Diagram>
+        <dxc:XYDiagram2D>
+          <dxc:XYDiagram2D.Series>
+            <dxc:BarSideBySideSeries2D DataSource="{StaticResource ObjectCollection}" 
+                               ArgumentDataMember="X" ValueDataMember="Y">
+              <dxc:BarSideBySideSeries2D.Model>
+                <dxc:SimpleBar2DModel />
+              </dxc:BarSideBySideSeries2D.Model>
+            </dxc:BarSideBySideSeries2D>
+          </dxc:XYDiagram2D.Series>
+        </dxc:XYDiagram2D>
+      </dxc:ChartControl.Diagram>
+    </dxc:ChartControl>
+  </Grid>
+</UserControl>

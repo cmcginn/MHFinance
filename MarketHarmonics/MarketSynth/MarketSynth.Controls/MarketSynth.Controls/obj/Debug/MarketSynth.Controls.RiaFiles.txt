@@ -1,0 +1,2 @@
+C:\Projects\Prototypes\MarketSynth.Controls\MarketSynth.Controls
+Generated_Code\MarketSynth.Controls.Web.g.cs

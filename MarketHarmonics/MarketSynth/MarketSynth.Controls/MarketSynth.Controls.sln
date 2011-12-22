@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketSynth.Controls", "MarketSynth.Controls\MarketSynth.Controls.csproj", "{26AE4254-726E-400C-B780-EB5433201C42}"
+	ProjectSection(ProjectDependencies) = postProject
+		{754CFE20-FFDE-4D94-8179-29D932FFC8CC} = {754CFE20-FFDE-4D94-8179-29D932FFC8CC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketSynth.Controls.Web", "MarketSynth.Controls.Web\MarketSynth.Controls.Web.csproj", "{754CFE20-FFDE-4D94-8179-29D932FFC8CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverSynth.Library", "SilverSynth.Library\SilverSynth.Library.csproj", "{0C248B45-4D0B-4682-9982-BC34655449F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26AE4254-726E-400C-B780-EB5433201C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AE4254-726E-400C-B780-EB5433201C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AE4254-726E-400C-B780-EB5433201C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AE4254-726E-400C-B780-EB5433201C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754CFE20-FFDE-4D94-8179-29D932FFC8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754CFE20-FFDE-4D94-8179-29D932FFC8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754CFE20-FFDE-4D94-8179-29D932FFC8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754CFE20-FFDE-4D94-8179-29D932FFC8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C248B45-4D0B-4682-9982-BC34655449F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C248B45-4D0B-4682-9982-BC34655449F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C248B45-4D0B-4682-9982-BC34655449F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C248B45-4D0B-4682-9982-BC34655449F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
