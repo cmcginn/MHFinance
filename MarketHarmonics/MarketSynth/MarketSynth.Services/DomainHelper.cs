@@ -8,7 +8,7 @@ namespace MarketSynth.Services {
     public static void AssignFrequencies( this List<PointData> pointData ) {
       var max = pointData.Max( x => x.Point );
       pointData.ToList().ForEach( x => {
-        x.Frequency = ( x.Point / max ) * 100;
+        x.Frequency = (( x.Point / max ) * 500)/100;
       } );
     }
     public static List<PointData> GetOpenPointData( this List<MarketData> marketData ) {

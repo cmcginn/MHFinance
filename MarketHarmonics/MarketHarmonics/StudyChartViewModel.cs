@@ -14,11 +14,15 @@ using System.ComponentModel;
 using MarketSynth.Services;
 using System.ServiceModel.DomainServices.Client;
 using System.Collections.ObjectModel;
+using System.Windows.Threading;
 namespace MarketHarmonics {
   public class StudyChartViewModel : INotifyPropertyChanged {
-
+    int _CurrentIndex = 0;
+    DispatcherTimer _DispatchTimer;
     ObservableCollection<StudyModel> _StudyModels;
     SimpleCommand _RunStudiesCommand;
+    SimpleCommand _RunStudiesSoundCommand;
+    public event EventHandler SoundLoaded;
     public SimpleCommand RunStudiesCommand {
       get {
         return _RunStudiesCommand;
@@ -30,6 +34,11 @@ namespace MarketHarmonics {
         OnPropertyChanged( this, new PropertyChangedEventArgs( "RunStudiesCommand" ) );
       }
     }
+    public virtual void OnSoundLoaded( object sender, EventArgs e ) {
+      EventHandler handler = SoundLoaded;
+      if( handler != null )
+        handler( sender, e );
+    }
     public virtual void OnPropertyChanged( object sender, PropertyChangedEventArgs e ) {
       PropertyChangedEventHandler handler = PropertyChanged;
       if( handler != null )
@@ -37,25 +46,72 @@ namespace MarketHarmonics {
     }
     public event PropertyChangedEventHandler PropertyChanged;
     protected virtual void Initialize() {
+      _DispatchTimer = new DispatcherTimer();
+      _DispatchTimer.Interval = new TimeSpan( 0, 0, 1 );
+      _DispatchTimer.Tick += new EventHandler( _DispatchTimer_Tick );
+
       StudyModels = new ObservableCollection<StudyModel>();
       StudyModels.CollectionChanged += StudyModels_CollectionChanged;
       RunStudiesCommand = new SimpleCommand();
       RunStudiesCommand.MayBeExecuted = true;
+      RunStudiesSoundCommand = new SimpleCommand();
+      RunStudiesSoundCommand.Executed += new EventHandler( RunStudiesSoundCommand_Executed );
+    }
+
+    void _DispatchTimer_Tick( object sender, EventArgs e ) {
+      SoundWaves.ForEach( x => {
+        if( x.HasNextValue() )
+          x.NextValue();
+      } );
+    }
+    List<ISoundWaveGenerator> _SoundWaves;
+
+    void RunStudiesSoundCommand_Executed( object sender, EventArgs e ) {
+      List<ISoundWaveGenerator> wavs = new List<ISoundWaveGenerator>();
+      StudyModels.ToList().ForEach( x => {
+        var soundWave = new OscillationSoundWave();
+        soundWave.SoundWaveData = x.PointModels.Select( y => y.Frequency + 200 );
+        wavs.Add( soundWave );
+      } );
+      SoundWaves = wavs;
+      OnSoundLoaded( this, EventArgs.Empty );
+      _DispatchTimer.Start();
     }
 
     void StudyModels_CollectionChanged( object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e ) {
-      if(e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
+      if( e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add ) {
         SetYAxisRange();
+        RunStudiesSoundCommand.MayBeExecuted = true;
+      }
     }
     public StudyChartViewModel() {
       Initialize();
     }
 
-    //public event EventHandler<EventArgs<StudyModel>> Ploted;
+    
     public void PlotStudyModel( StudyModel data ) {
       //OnPloted( this, new EventArgs<StudyModel>( data ) );
       StudyModels.Add( data );
       
+    }
+    public SimpleCommand RunStudiesSoundCommand {
+      get {
+        return _RunStudiesSoundCommand;
+      }
+      set {
+        _RunStudiesSoundCommand = value;
+      }
+    }
+    public List<ISoundWaveGenerator> SoundWaves {
+      get {
+        return _SoundWaves;
+      }
+      set {
+        if( _SoundWaves == value )
+          return;
+        _SoundWaves = value;
+        OnPropertyChanged( this, new PropertyChangedEventArgs( "SoundWaves" ) );
+      }
     }
     public ObservableCollection<StudyModel> StudyModels {
       get {

@@ -70,7 +70,7 @@ namespace MarketHarmonics {
     public event EventHandler StudyDataLoaded;
 
     protected void OnDataLoaded( LoadOperation<PointData> operation ) {
-      PointModels = new ObservableCollection<PointModel>( operation.Entities.Select( x => new PointModel { XAxisValue = x.Date, YAxisValue = x.Point } ) );
+      PointModels = new ObservableCollection<PointModel>( operation.Entities.Select( x => new PointModel { XAxisValue = x.Date, YAxisValue = x.Point, Frequency=x.Frequency } ) );
       OnStudyDataLoaded( this, EventArgs.Empty );
     }
 

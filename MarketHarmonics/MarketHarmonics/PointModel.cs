@@ -15,12 +15,24 @@ namespace MarketHarmonics {
 
     DateTime _XAxisValue;
     double _YAxisValue;
+    double _Frequency;
     public virtual void OnPropertyChanged( object sender, PropertyChangedEventArgs e ) {
       PropertyChangedEventHandler handler = PropertyChanged;
       if( handler != null )
         handler( sender, e );
     }
     public event PropertyChangedEventHandler PropertyChanged;
+    public double Frequency {
+      get {
+        return _Frequency;
+      }
+      set {
+        if( _Frequency == value )
+          return;
+        _Frequency = value;
+        OnPropertyChanged( this, new PropertyChangedEventArgs("Frequency") );
+      }
+    }
     public DateTime XAxisValue {
       get {
         return _XAxisValue;

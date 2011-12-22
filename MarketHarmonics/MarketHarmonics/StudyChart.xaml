@@ -11,6 +11,11 @@
       <RowDefinition></RowDefinition>
       <RowDefinition Height="27"></RowDefinition>
     </Grid.RowDefinitions>
+    <MediaElement Name="study1" AutoPlay="False"></MediaElement>
+    <MediaElement Name="study2" AutoPlay="False"></MediaElement>
+    <MediaElement Name="study3" AutoPlay="False"></MediaElement>
+    <MediaElement Name="study4" AutoPlay="False"></MediaElement>
+    <MediaElement Name="study5" AutoPlay="False"></MediaElement>
     <dxc:ChartControl Name="chartControl1" Grid.Row="0"  >
       <dxc:ChartControl.Diagram>
         <dxc:XYDiagram2D EnableAxisXNavigation="True" EnableAxisYNavigation="True">
@@ -36,6 +41,7 @@
 
     <StackPanel Orientation="Horizontal" Grid.Row="1">
       <Button Content="Run" Width="75" Command="{Binding RunStudiesCommand}"></Button>
+      <Button Content="Play" Width="75" Command="{Binding RunStudiesSoundCommand}"></Button>
     </StackPanel>
   </Grid>
 </UserControl>
