@@ -31,7 +31,7 @@
           <dxc:XYDiagram2D.AxisX>
             <dxc:AxisX2D>
               <dxc:AxisX2D.Range>
-                <dxc:AxisRange MinValueInternal="90" MaxValueInternal="100" />
+                <dxc:AxisRange MinValueInternal="0" MaxValueInternal="5" />
               </dxc:AxisX2D.Range>
             </dxc:AxisX2D>
           </dxc:XYDiagram2D.AxisX>

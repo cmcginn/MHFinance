@@ -39,9 +39,11 @@ namespace MarketHarmonics {
       series.DataSource = data.PointModels;
       series.ArgumentDataMember = "XAxisValue";
       series.ValueDataMember = "YAxisValue";
+      series.ArgumentScaleType = ScaleType.DateTime;
       
+      xyDiagram.AxisY.Range.MinValueInternal = _ViewModel.YAxisMinValue;
+      xyDiagram.AxisY.Range.MaxValueInternal = _ViewModel.YAxisMaxValue;
       chartControl1.Diagram.Series.Add( series );
-
       //
     }
     void StudyModels_CollectionChanged( object sender, NotifyCollectionChangedEventArgs e ) {

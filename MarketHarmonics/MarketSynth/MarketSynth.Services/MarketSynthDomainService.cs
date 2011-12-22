@@ -46,8 +46,10 @@ namespace MarketSynth.Services {
     public Guid Id { get; set; }
     public DateTime Date { get; set; }
     public double Point { get; set; }
+    public double Frequency { get; set; }
   }
 
+ 
   [EnableClientAccess()]
   public class MarketSynthDomainService : DomainService {
 
@@ -109,29 +111,24 @@ namespace MarketSynth.Services {
     public void AddStudy( Study study ) {
     }
 
-    public StudyIndicator GetStudyIndicator( string instrument,string indicator ) {
-      
-      var marketData = GetMarketDataBySymbol( instrument ).ToList();
-      var result = new StudyIndicator {
-        Id = Guid.NewGuid(),
-        Label = instrument,
-        PointData = String.Join( ",", marketData.Select( x => x.Open.ToString() ) )
-      };
-      MarketSynthDomainService._StudyIndicators.Add( result );
-      return result;
-    }
-
     public IQueryable<PointData> GetPointData( string instrument, string indicator ) {
       var marketData = GetMarketDataBySymbol( instrument ).ToList();
-      return marketData.Select( x => new PointData { Id = Guid.NewGuid(), Point = ( double )x.Open, Date=x.MarketDate } ).AsQueryable();
-      //var result = new StudyIndicator {
-      //  Id = Guid.NewGuid(),
-      //  Label = instrument,
-      //  PointData = String.Join( ",", marketData.Select( x => x.Open.ToString() ) )
-      //};
-      //MarketSynthDomainService._StudyIndicators.Add( result );
-      //return result;
+      List<PointData> pointData = null;
+      switch( indicator.ToUpper() ) {
+        case "CLOSE PRICE":
+          pointData = marketData.GetClosePointData();
+          break;
+        case "OPEN PRICE":
+          pointData = marketData.GetOpenPointData();
+          break;
+        default:
+          break;
+      }
+      pointData.AssignFrequencies();
+      return pointData.AsQueryable();
     }
+
+
   }
 }
 

@@ -566,21 +566,6 @@ namespace MarketSynth.Services
         }
         
         /// <summary>
-        /// Gets an EntityQuery instance that can be used to load <see cref="StudyIndicator"/> entity instances using the 'GetStudyIndicator' query.
-        /// </summary>
-        /// <param name="instrument">The value for the 'instrument' parameter of the query.</param>
-        /// <param name="indicator">The value for the 'indicator' parameter of the query.</param>
-        /// <returns>An EntityQuery that can be loaded to retrieve <see cref="StudyIndicator"/> entity instances.</returns>
-        public EntityQuery<StudyIndicator> GetStudyIndicatorQuery(string instrument, string indicator)
-        {
-            Dictionary<string, object> parameters = new Dictionary<string, object>();
-            parameters.Add("instrument", instrument);
-            parameters.Add("indicator", indicator);
-            this.ValidateMethod("GetStudyIndicatorQuery", parameters);
-            return base.CreateQuery<StudyIndicator>("GetStudyIndicator", parameters, false, false);
-        }
-        
-        /// <summary>
         /// Gets an EntityQuery instance that can be used to load <see cref="StudyIndicator"/> entity instances using the 'GetStudyIndicators' query.
         /// </summary>
         /// <returns>An EntityQuery that can be loaded to retrieve <see cref="StudyIndicator"/> entity instances.</returns>
@@ -701,26 +686,6 @@ namespace MarketSynth.Services
             QueryResult<Study> EndGetStudies(IAsyncResult result);
             
             /// <summary>
-            /// Asynchronously invokes the 'GetStudyIndicator' operation.
-            /// </summary>
-            /// <param name="instrument">The value for the 'instrument' parameter of this action.</param>
-            /// <param name="indicator">The value for the 'indicator' parameter of this action.</param>
-            /// <param name="callback">Callback to invoke on completion.</param>
-            /// <param name="asyncState">Optional state object.</param>
-            /// <returns>An IAsyncResult that can be used to monitor the request.</returns>
-            [FaultContract(typeof(DomainServiceFault), Action="http://tempuri.org/MarketSynthDomainService/GetStudyIndicatorDomainServiceFault", Name="DomainServiceFault", Namespace="DomainServices")]
-            [OperationContract(AsyncPattern=true, Action="http://tempuri.org/MarketSynthDomainService/GetStudyIndicator", ReplyAction="http://tempuri.org/MarketSynthDomainService/GetStudyIndicatorResponse")]
-            [WebGet()]
-            IAsyncResult BeginGetStudyIndicator(string instrument, string indicator, AsyncCallback callback, object asyncState);
-            
-            /// <summary>
-            /// Completes the asynchronous operation begun by 'BeginGetStudyIndicator'.
-            /// </summary>
-            /// <param name="result">The IAsyncResult returned from 'BeginGetStudyIndicator'.</param>
-            /// <returns>The 'QueryResult' returned from the 'GetStudyIndicator' operation.</returns>
-            QueryResult<StudyIndicator> EndGetStudyIndicator(IAsyncResult result);
-            
-            /// <summary>
             /// Asynchronously invokes the 'GetStudyIndicators' operation.
             /// </summary>
             /// <param name="callback">Callback to invoke on completion.</param>
@@ -780,6 +745,8 @@ namespace MarketSynth.Services
         
         private DateTime _date;
         
+        private double _frequency;
+        
         private Guid _id;
         
         private double _point;
@@ -793,6 +760,8 @@ namespace MarketSynth.Services
         partial void OnCreated();
         partial void OnDateChanging(DateTime value);
         partial void OnDateChanged();
+        partial void OnFrequencyChanging(double value);
+        partial void OnFrequencyChanged();
         partial void OnIdChanging(Guid value);
         partial void OnIdChanged();
         partial void OnPointChanging(double value);
@@ -829,6 +798,30 @@ namespace MarketSynth.Services
                     this._date = value;
                     this.RaiseDataMemberChanged("Date");
                     this.OnDateChanged();
+                }
+            }
+        }
+        
+        /// <summary>
+        /// Gets or sets the 'Frequency' value.
+        /// </summary>
+        [DataMember()]
+        public double Frequency
+        {
+            get
+            {
+                return this._frequency;
+            }
+            set
+            {
+                if ((this._frequency != value))
+                {
+                    this.OnFrequencyChanging(value);
+                    this.RaiseDataMemberChanging("Frequency");
+                    this.ValidateProperty("Frequency", value);
+                    this._frequency = value;
+                    this.RaiseDataMemberChanged("Frequency");
+                    this.OnFrequencyChanged();
                 }
             }
         }

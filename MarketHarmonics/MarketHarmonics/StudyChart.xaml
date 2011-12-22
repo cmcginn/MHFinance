@@ -17,10 +17,19 @@
           <dxc:XYDiagram2D.AxisX>
             <dxc:AxisX2D>
               <dxc:AxisX2D.Range>
-                <dxc:AxisRange MinValueInternal="90" MaxValueInternal="100" />
+                <dxc:AxisRange MaxValueInternal="200" MinValueInternal="0" />
               </dxc:AxisX2D.Range>
             </dxc:AxisX2D>
           </dxc:XYDiagram2D.AxisX>
+          <dxc:XYDiagram2D.AxisY>
+            <dxc:AxisY2D>
+              <dxc:AxisY2D.Range>
+                <dxc:AxisRange />
+              </dxc:AxisY2D.Range>
+            </dxc:AxisY2D>
+          </dxc:XYDiagram2D.AxisY>
+          
+          
         </dxc:XYDiagram2D>
       </dxc:ChartControl.Diagram>
     </dxc:ChartControl>

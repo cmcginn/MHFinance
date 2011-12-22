@@ -15,7 +15,7 @@ using MarketSynth.Services;
 using System.ServiceModel.DomainServices.Client;
 using System.Collections.ObjectModel;
 namespace MarketHarmonics {
-  public class StudyChartViewModel:INotifyPropertyChanged {
+  public class StudyChartViewModel : INotifyPropertyChanged {
 
     ObservableCollection<StudyModel> _StudyModels;
     SimpleCommand _RunStudiesCommand;
@@ -30,11 +30,6 @@ namespace MarketHarmonics {
         OnPropertyChanged( this, new PropertyChangedEventArgs( "RunStudiesCommand" ) );
       }
     }
-    //public virtual void OnPloted( object sender, EventArgs<StudyModel> e ) {
-    //  EventHandler<EventArgs<StudyModel>> handler = Ploted;
-    //  if( handler != null )
-    //    handler( sender, e );
-    //}
     public virtual void OnPropertyChanged( object sender, PropertyChangedEventArgs e ) {
       PropertyChangedEventHandler handler = PropertyChanged;
       if( handler != null )
@@ -43,8 +38,14 @@ namespace MarketHarmonics {
     public event PropertyChangedEventHandler PropertyChanged;
     protected virtual void Initialize() {
       StudyModels = new ObservableCollection<StudyModel>();
+      StudyModels.CollectionChanged += StudyModels_CollectionChanged;
       RunStudiesCommand = new SimpleCommand();
       RunStudiesCommand.MayBeExecuted = true;
+    }
+
+    void StudyModels_CollectionChanged( object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e ) {
+      if(e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
+        SetYAxisRange();
     }
     public StudyChartViewModel() {
       Initialize();
@@ -54,6 +55,7 @@ namespace MarketHarmonics {
     public void PlotStudyModel( StudyModel data ) {
       //OnPloted( this, new EventArgs<StudyModel>( data ) );
       StudyModels.Add( data );
+      
     }
     public ObservableCollection<StudyModel> StudyModels {
       get {
@@ -66,5 +68,34 @@ namespace MarketHarmonics {
         OnPropertyChanged( this, new PropertyChangedEventArgs( "StudyModels" ) );
       }
     }
+    void SetYAxisRange() {
+      var points = new List<double>();
+      StudyModels.ToList().ForEach( x => {
+        points.AddRange( x.PointModels.Select( y => y.YAxisValue ) );
+      } );
+      YAxisMaxValue = points.Max();
+      YAxisMinValue = points.Min();
+    }
+    double _YAxisMinValue;
+    public double YAxisMinValue {
+      get { return _YAxisMinValue; }
+      set {
+        if( _YAxisMinValue == value )
+          return;
+        _YAxisMinValue = value;
+        OnPropertyChanged( this, new PropertyChangedEventArgs("YAxisMinValue") );
+      }
+    }
+    double _YAxisMaxValue;
+    public double YAxisMaxValue {
+      get { return _YAxisMaxValue; }
+      set {
+        if( _YAxisMaxValue == value )
+          return;
+        _YAxisMaxValue = value;
+        OnPropertyChanged( this, new PropertyChangedEventArgs("YAxisMaxValue") );
+      }
+    }
+    
   }
 }
