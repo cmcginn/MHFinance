@@ -32,10 +32,14 @@ namespace MarketHarmonics {
       OnInitialized( this, EventArgs.Empty );
     }
     void AddSeries( StudyModel data ) {
+      
       var series = new LineSeries2D();
+      var xyDiagram = chartControl1.Diagram as XYDiagram2D;
+      
       series.DataSource = data.PointModels;
       series.ArgumentDataMember = "XAxisValue";
       series.ValueDataMember = "YAxisValue";
+      
       chartControl1.Diagram.Series.Add( series );
 
       //

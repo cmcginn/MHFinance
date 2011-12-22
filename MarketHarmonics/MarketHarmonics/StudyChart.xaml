@@ -5,15 +5,22 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     d:DesignHeight="300" d:DesignWidth="400" xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts">
-    
+
     <Grid x:Name="LayoutRoot" Background="White">
     <Grid.RowDefinitions>
       <RowDefinition></RowDefinition>
       <RowDefinition Height="27"></RowDefinition>
     </Grid.RowDefinitions>
-      <dxc:ChartControl Name="chartControl1" Grid.Row="0">       
-      <dxc:ChartControl.Diagram >        
-        <dxc:XYDiagram2D>          
+    <dxc:ChartControl Name="chartControl1" Grid.Row="0"  >
+      <dxc:ChartControl.Diagram>
+        <dxc:XYDiagram2D EnableAxisXNavigation="True" EnableAxisYNavigation="True">
+          <dxc:XYDiagram2D.AxisX>
+            <dxc:AxisX2D>
+              <dxc:AxisX2D.Range>
+                <dxc:AxisRange MinValueInternal="90" MaxValueInternal="100" />
+              </dxc:AxisX2D.Range>
+            </dxc:AxisX2D>
+          </dxc:XYDiagram2D.AxisX>
         </dxc:XYDiagram2D>
       </dxc:ChartControl.Diagram>
     </dxc:ChartControl>
